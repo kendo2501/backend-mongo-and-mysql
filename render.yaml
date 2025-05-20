@@ -1,0 +1,14 @@
+# Exported from Render on 2025-05-20T05:43:11Z
+services:
+- type: web
+  name: backend-mongo-and-mysql
+  runtime: static
+  repo: https://github.com/kendo2501/backend-mongo-and-mysql
+  buildCommand: node server.js
+  staticPublishPath: server.js
+  headers:
+  - path: /api
+    name: /backend
+    value: "25012003"
+  autoDeployTrigger: commit
+version: "1"
